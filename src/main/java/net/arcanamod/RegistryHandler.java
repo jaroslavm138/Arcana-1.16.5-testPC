@@ -6,7 +6,6 @@ import net.arcanamod.blocks.ArcanaBlocks;
 import net.arcanamod.blocks.CrystalClusterBlock;
 import net.arcanamod.blocks.bases.GroupedBlock;
 import net.arcanamod.items.CrystalClusterItem;
-import net.arcanamod.worldgen.trees.LargeOakTree;
 import net.arcanamod.worldgen.trees.features.*;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
@@ -76,12 +75,12 @@ public class RegistryHandler{
 		
 		MAGICAL_FOREST_BONUS_TREES = Feature.RANDOM_SELECTOR
 				.withConfiguration(new MultipleRandomFeatureConfig(ImmutableList.of(
-						SILVERWOOD_TREE.withChance(2 / 7f),
-						LARGE_OAK_TREE.withChance(5 / 7f),
-						GREATWOOD_TREE.withChance(5 / 7f)),
+						LARGE_OAK_TREE.withChance(5 / 8f),
+						SILVERWOOD_TREE.withChance(2 / 8f),
+						GREATWOOD_TREE.withChance(2 / 8f)),
 						GREATWOOD_TREE)) // yes this is dumb but whatever
 				.withPlacement(Features.Placements.HEIGHTMAP_PLACEMENT)
-				.withPlacement(Placement.COUNT_EXTRA.configure(new AtSurfaceWithExtraConfig(0, .28f, 1)));
+				.withPlacement(Placement.COUNT_EXTRA.configure(new AtSurfaceWithExtraConfig(0, 7.0f, 1)));
 		
 		MAGICAL_FOREST_GIANT_MUSHROOMS = Feature.RANDOM_SELECTOR
 				.withConfiguration(new MultipleRandomFeatureConfig(ImmutableList.of(

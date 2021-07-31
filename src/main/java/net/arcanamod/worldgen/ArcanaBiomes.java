@@ -34,14 +34,13 @@ public class ArcanaBiomes{
 		withCommonOverworldBlocks(settings);
 		withOverworldOres(settings);
 		withDisks(settings);
-		//withForestBirchTrees(settings);
 		withDefaultFlowers(settings);
 		withForestGrass(settings);
 		withNormalMushroomGeneration(settings);
 		withSugarCaneAndPumpkins(settings);
 		withLavaAndWaterSprings(settings);
-		withFrozenTopLayer(settings);
-		//withTallBirches(settings);
+		withBirchTrees(settings);
+
 		
 		MobSpawnInfo.Builder mobSpawnBuilder = getStandardMobSpawnBuilder()
 				.withSpawner(EntityClassification.CREATURE, new MobSpawnInfo.Spawners(EntityType.WOLF, 5, 4, 4))

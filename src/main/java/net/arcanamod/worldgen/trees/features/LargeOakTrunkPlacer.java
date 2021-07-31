@@ -101,7 +101,7 @@ public class LargeOakTrunkPlacer extends AbstractTrunkPlacer{
                             func_236911_a_(world, rand, curPos, logs, box, config);
                             func_236911_a_(world, rand, curPos.east(), logs, box, config);
                             func_236911_a_(world, rand, curPos.south(), logs, box, config);
-                            if(curHeight < 3){
+                            if(curHeight < 3){     // Prevent floating wood
                                 func_236911_a_(world, rand, curPos.east().south(), logs, box, config);
                                 BlockPos checker = new BlockPos(curPos.getX(), curPos.getY()-1,curPos.getZ());
                                 if(TreeFeature.isAirAt(world, checker)){
@@ -129,7 +129,7 @@ public class LargeOakTrunkPlacer extends AbstractTrunkPlacer{
                         func_236911_a_(world, rand, curPos, logs, box, config);
                         func_236911_a_(world, rand, curPos.east(), logs, box, config);
                         func_236911_a_(world, rand, curPos.east().south(), logs, box, config);
-                        if(curHeight < 3){
+                        if(curHeight < 3){ // Prevent floating wood
                             func_236911_a_(world, rand, curPos.south(), logs, box, config);
                             BlockPos checker = new BlockPos(curPos.getX(), curPos.getY()-1,curPos.getZ());
                             if(TreeFeature.isAirAt(world, checker)){
@@ -155,7 +155,7 @@ public class LargeOakTrunkPlacer extends AbstractTrunkPlacer{
                         func_236911_a_(world, rand, curPos, logs, box, config);
                         func_236911_a_(world, rand, curPos.east().south(), logs, box, config);
                         func_236911_a_(world, rand, curPos.south(), logs, box, config);
-                        if(curHeight < 3){
+                        if(curHeight < 3){ // Prevent floating wood
                             func_236911_a_(world, rand, curPos.east(), logs, box, config);
                             BlockPos checker = new BlockPos(curPos.getX(), curPos.getY()-1,curPos.getZ());
                             if(TreeFeature.isAirAt(world, checker)){
