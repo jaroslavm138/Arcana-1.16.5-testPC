@@ -1,0 +1,24 @@
+{
+  "replace": false,
+  "values": [
+    "arcana:dair_log",
+    "arcana:dead_log",
+    "arcana:eucalyptus_log",
+    "arcana:greatwood_log",
+    "arcana:hawthorn_log",
+    "arcana:silverwood_log",
+    "arcana:trypophobius_log",
+    "arcana:willow_log",
+    "arcana:tainted_dair_log",
+    "arcana:tainted_eucalyptus_log",
+    "arcana:tainted_greatwood_log",
+    "arcana:tainted_hawthorn_log",
+    "arcana:tainted_willow_log",
+    "arcana:tainted_oak_log",
+    "arcana:tainted_darkoak_log",
+    "arcana:tainted_acacia_log",
+    "arcana:tainted_birch_log",
+    "arcana:tainted_jungle_log",
+    "arcana:tainted_spruce_log"
+  ]
+}

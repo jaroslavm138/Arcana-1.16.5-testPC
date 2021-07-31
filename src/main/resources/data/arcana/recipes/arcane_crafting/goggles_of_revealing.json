@@ -1,0 +1,38 @@
+{
+  "type": "arcana:arcane_crafting_shaped",
+  "pattern": [
+    "aof",
+    "glg",
+    "ecw"
+  ],
+  "key": {
+    "g": {
+      "tag": "forge:ingots/gold"
+    },
+    "l": {
+      "tag": "forge:glass"
+    },
+    "a": {
+      "item": "arcana:air_crystal"
+    },
+    "e": {
+      "item": "arcana:earth_crystal"
+    },
+    "f": {
+      "item": "arcana:fire_crystal"
+    },
+    "w": {
+      "item": "arcana:water_crystal"
+    },
+    "o": {
+      "item": "arcana:order_crystal"
+    },
+    "c": {
+      "item": "arcana:chaos_crystal"
+    }
+  },
+  "aspects": [],
+  "result": {
+    "item": "arcana:goggles_of_revealing"
+  }
+}

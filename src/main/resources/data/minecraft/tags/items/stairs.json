@@ -1,0 +1,18 @@
+{
+  "replace": false,
+  "values": [
+    "arcana:arcane_stone_stairs",
+    "arcana:arcane_stone_bricks_stairs",
+    "arcana:dair_stairs",
+    "arcana:dead_stairs",
+    "arcana:eucalyptus_stairs",
+    "arcana:greatwood_stairs",
+    "arcana:hawthorn_stairs",
+    "arcana:silverwood_stairs",
+    "arcana:trypophobius_stairs",
+    "arcana:willow_stairs",
+    "arcana:dungeon_bricks_stairs",
+    "arcana:cracked_dungeon_bricks_stairs",
+    "arcana:mossy_dungeon_bricks_stairs"
+  ]
+}

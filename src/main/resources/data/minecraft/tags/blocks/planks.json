@@ -1,0 +1,24 @@
+{
+  "replace": false,
+  "values": [
+    "arcana:dair_planks",
+    "arcana:dead_planks",
+    "arcana:eucalyptus_planks",
+    "arcana:greatwood_planks",
+    "arcana:hawthorn_planks",
+    "arcana:silverwood_planks",
+    "arcana:trypophobius_planks",
+    "arcana:willow_planks",
+    "arcana:tainted_dair_planks",
+    "arcana:tainted_eucalyptus_planks",
+    "arcana:tainted_greatwood_planks",
+    "arcana:tainted_hawthorn_planks",
+    "arcana:tainted_willow_planks",
+    "arcana:tainted_oak_planks",
+    "arcana:tainted_darkoak_planks",
+    "arcana:tainted_acacia_planks",
+    "arcana:tainted_birch_planks",
+    "arcana:tainted_jungle_planks",
+    "arcana:tainted_spruce_planks"
+  ]
+}

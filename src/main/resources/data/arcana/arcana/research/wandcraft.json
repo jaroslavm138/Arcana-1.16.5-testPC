@@ -1,0 +1,255 @@
+{
+  "entries": [
+    {
+      "key": "arcana:wandcraft_root",
+      "name": "research.arcana.wandcraft_root",
+      "icons": [
+        "arcana:item/basicwand.png"
+      ],
+      "category": "arcana:wandcraft",
+      "parents": [
+        "arcana:wandcraft"
+      ],
+      "meta": [
+        "spiky_base"
+      ],
+      "x": 0,
+      "y": 0,
+      "sections": [
+        {
+          "type": "string",
+          "content": "research.arcana.wandcraft_root.text"
+        }
+      ]
+    },
+    {
+      "key": "arcana:cores_intro",
+      "name": "research.arcana.cores_intro",
+      "icons": [
+        "arcana:greatwood_wand_core"
+      ],
+      "category": "arcana:wandcraft",
+      "parents": [
+        "&arcana:wandcraft_root"
+      ],
+      "meta": [
+        "round_base",
+        "yellow_base"
+      ],
+      "x": 0,
+      "y": 3,
+      "sections": [
+        {
+          "type": "string",
+          "content": "research.arcana.cores_intro.text"
+        },
+        {
+          "type": "arcane_crafting",
+          "content": "arcana:arcane_crafting/greatwood_wand_core"
+        }
+      ]
+    },
+    {
+      "key": "arcana:hawthorn_core",
+      "name": "research.arcana.hawthorn_core",
+      "icons": [
+        "arcana:hawthorn_wand_core"
+      ],
+      "category": "arcana:wandcraft",
+      "parents": [
+        "arcana:cores_intro"
+      ],
+      "x": 0,
+      "y": 6,
+      "sections": [
+        {
+          "type": "string",
+          "content": "research.arcana.cores_intro.text"
+        },
+        {
+          "type": "arcane_crafting",
+          "content": "arcana:arcane_crafting/hawthorn_wand_core"
+        }
+      ]
+    },
+    {
+      "key": "arcana:arcanium_core",
+      "name": "research.arcana.arcanium_core",
+      "icons": [
+        "arcana:arcanium_wand_core"
+      ],
+      "category": "arcana:wandcraft",
+      "parents": [
+        "arcana:cores_intro"
+      ],
+      "x": 2,
+      "y": 5,
+      "sections": [
+        {
+          "type": "string",
+          "content": "research.arcana.cores_intro.text"
+        },
+        {
+          "type": "arcane_crafting",
+          "content": "arcana:arcane_crafting/arcanium_wand_core"
+        }
+      ]
+    },
+    {
+      "key": "arcana:dair_core",
+      "name": "research.arcana.dair_core",
+      "icons": [
+        "arcana:dair_wand_core"
+      ],
+      "category": "arcana:wandcraft",
+      "parents": [
+        "arcana:cores_intro"
+      ],
+      "x": 3,
+      "y": 3,
+      "sections": [
+        {
+          "type": "string",
+          "content": "research.arcana.cores_intro.text"
+        },
+        {
+          "type": "arcane_crafting",
+          "content": "arcana:arcane_crafting/dair_wand_core"
+        }
+      ]
+    },
+    {
+      "key": "arcana:silverwood_core",
+      "name": "research.arcana.silverwood_core",
+      "icons": [
+        "arcana:silverwood_wand_core"
+      ],
+      "category": "arcana:wandcraft",
+      "parents": [
+        "arcana:dair_core",
+        "/arcana:hawthorn_core",
+        "/arcana:arcanium_core"
+      ],
+      "x": 4,
+      "y": 7,
+      "sections": [
+        {
+          "type": "string",
+          "content": "research.arcana.cores_intro.text"
+        },
+        {
+          "type": "arcane_crafting",
+          "content": "arcana:arcane_crafting/silverwood_wand_core"
+        }
+      ]
+    },
+    {
+      "key": "arcana:caps_intro",
+      "name": "research.arcana.caps_intro",
+      "icons": [
+        "arcana:gold_cap"
+      ],
+      "category": "arcana:wandcraft",
+      "parents": [
+        "&arcana:wandcraft_root"
+      ],
+      "meta": [
+        "round_base",
+        "yellow_base"
+      ],
+      "x": 0,
+      "y": -3,
+      "sections": [
+        {
+          "type": "string",
+          "content": "research.arcana.caps_intro.text"
+        },
+        {
+          "type": "arcane_crafting",
+          "content": "arcana:arcane_crafting/gold_cap"
+        }
+      ]
+    },
+    {
+      "key": "arcana:foci_intro",
+      "name": "research.arcana.foci_intro",
+      "icons": [
+        "arcana:focus_parts"
+      ],
+      "category": "arcana:wandcraft",
+      "parents": [
+        "&arcana:wandcraft_root"
+      ],
+      "meta": [
+        "round_base",
+        "yellow_base"
+      ],
+      "x": 3,
+      "y": 0,
+      "sections": [
+        {
+          "type": "string",
+          "content": "research.arcana.foci_intro.text"
+        }
+      ]
+    },
+    {
+      "key": "arcana:staffs",
+      "name": "research.arcana.staffs",
+      "icons": [
+        "arcana:item/basicstaff.png"
+      ],
+      "category": "arcana:wandcraft",
+      "parents": [
+        "arcana:wandcraft_root"
+      ],
+      "x": -3,
+      "y": -2,
+      "sections": [
+        {
+          "type": "string",
+          "content": "research.arcana.wip"
+        }
+      ]
+    },
+    {
+      "key": "arcana:scepters",
+      "name": "research.arcana.scepters",
+      "icons": [
+        "arcana:item/basicscepter.png"
+      ],
+      "category": "arcana:wandcraft",
+      "parents": [
+        "arcana:wandcraft_root"
+      ],
+      "x": -3,
+      "y": 2,
+      "sections": [
+        {
+          "type": "string",
+          "content": "research.arcana.wip"
+        }
+      ]
+    },
+    {
+      "key": "arcana:gauntlets",
+      "name": "research.arcana.gauntlets",
+      "icons": [
+        "minecraft:barrier"
+      ],
+      "category": "arcana:wandcraft",
+      "parents": [
+        "arcana:staffs",
+        "arcana:scepters"
+      ],
+      "x": -6,
+      "y": 0,
+      "sections": [
+        {
+          "type": "string",
+          "content": "research.arcana.wip"
+        }
+      ]
+    }
+  ]
+}

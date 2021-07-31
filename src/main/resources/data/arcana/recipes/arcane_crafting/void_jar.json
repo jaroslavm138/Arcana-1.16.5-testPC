@@ -1,0 +1,36 @@
+{
+  "type": "arcana:arcane_crafting_shaped",
+  "group": "arcana:void_jar",
+  "pattern": [
+    " WA",
+    "GCG",
+    " G "
+  ],
+  "key": {
+    "W": {
+      "tag": "minecraft:planks"
+    },
+    "G": {
+      "tag": "forge:glass"
+    },
+    "A": {
+      "item": "arcana:amber"
+    },
+    "C": {
+      "item": "arcana:vacuum_crystal"
+    }
+  },
+  "aspects": [
+    {
+      "aspect": "arcana:water",
+      "amount": 5
+    },
+    {
+      "aspect": "arcana:order",
+      "amount": 10
+    }
+  ],
+  "result": {
+    "item": "arcana:void_jar"
+  }
+}
