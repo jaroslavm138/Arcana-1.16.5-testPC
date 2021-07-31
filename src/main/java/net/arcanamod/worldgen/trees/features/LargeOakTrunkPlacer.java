@@ -35,7 +35,7 @@ import static java.util.Objects.requireNonNull;
 public class LargeOakTrunkPlacer extends AbstractTrunkPlacer{
 
     public static final Codec<LargeOakTrunkPlacer> CODEC = RecordCodecBuilder.create((builderInstance) -> getAbstractTrunkCodec(builderInstance).apply(builderInstance, LargeOakTrunkPlacer::new));
-    public static final TrunkPlacerType<LargeOakTrunkPlacer> LARGE_OAK_PLACER = Registry.register(Registry.TRUNK_REPLACER, Arcana.arcLoc("greatwood_placer"), TrunkPlacerTypeAccessor.createTrunkPlacerType(CODEC));
+    public static final TrunkPlacerType<LargeOakTrunkPlacer> LARGE_OAK_PLACER = Registry.register(Registry.TRUNK_REPLACER, Arcana.arcLoc("large_oak_placer"), TrunkPlacerTypeAccessor.createTrunkPlacerType(CODEC));
 
     public LargeOakTrunkPlacer(int baseHeight, int heightRandA, int heightRandB){
         super(baseHeight, heightRandA, heightRandB);
@@ -53,25 +53,14 @@ public class LargeOakTrunkPlacer extends AbstractTrunkPlacer{
         int z = pos.getZ();
         if(y >= 1 && y + height + 1 < 255){
             BlockPos ground = pos.down();
-			/*if(!isSoil(world, ground, config.getSapling()))
-				return false;
-			else if(!isSpaceClearForHeight(world, pos, height))
-				return false;
-			else{*/
             func_236909_a_(world, ground);
             func_236909_a_(world, ground.east());
             func_236909_a_(world, ground.south());
             func_236909_a_(world, ground.south().east());
-            int top = y + height - 1;
             Set<BlockPos> leafNodes = new HashSet<>();
             // roots
             for(int x1 = -1; x1 <= 2; x1++){
                 for(int z1 = -1; z1 <= 2; z1++){
-                    //Experimentally put out
-                    // Skip root placement if we're in the trunk
-                    /*if((x1 == 0 && z1 == 1) || (x1 == 0 && z1 == 1)){
-                        continue;
-                    }*/
 
                     // Get the root height by nesting random calls to make it biased towards 0
                     int rootHeight = rand.nextInt(rand.nextInt(2) + 2);
@@ -191,15 +180,15 @@ public class LargeOakTrunkPlacer extends AbstractTrunkPlacer{
 
                 // Branches
                 if(curHeight > 5 && curHeight < height - 4){
-                    int branchCount = 1 + (curHeight / 5);
+                    int branchCount = 1 + (curHeight / 3);
                     double offset = Math.PI * 2 * rand.nextDouble();
 
                     // Make fewer branches at the bottom, but more at the top
                     for(int i = 0; i < branchCount; i++){
                         double angle = (((double)i / branchCount) * (Math.PI * 2)) + offset + (rand.nextDouble() * 0.2);
-                        int length = rand.nextInt(2) + (4 - branchCount) + curHeight / 6;
+                        int length = rand.nextInt(2) + (3 - branchCount) + curHeight / 2;
                         // Choose a starting location on the trunk
-                        BlockPos start = chooseStart(curPos, rand);
+                        BlockPos start = chooseStart(curPos);
 
                         for(int j = 0; j <= length; j++){
                             // Traverse through the branch
@@ -242,17 +231,8 @@ public class LargeOakTrunkPlacer extends AbstractTrunkPlacer{
         return axis == -1 || axis == 2;
     }
 
-    private static BlockPos chooseStart(BlockPos start, Random random){
-        switch(random.nextInt(1)){
-            default:
-            case 0:
-                return start;
-            /*case 1:
-                return start.east();
-            case 2:
-                return start.south();
-*/
-        }
+    private static BlockPos chooseStart(BlockPos start){
+        return start;
     }
 
     private boolean isSpaceClearForHeight(IWorldGenerationBaseReader world, BlockPos pos, int height){

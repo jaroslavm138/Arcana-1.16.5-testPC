@@ -37,18 +37,18 @@ public class LargeOakFoliagePlacer extends FoliagePlacer{
     }
 
     protected FoliagePlacerType<?> getPlacerType(){
-        return ArcanaFeatures.GREATWOOD_FOLIAGE.get();
+        return ArcanaFeatures.LARGE_OAK_FOLIAGE.get();
     }
 
     // generate
     protected void func_230372_a_(IWorldGenerationReader world, Random rand, BaseTreeFeatureConfig config, int height, Foliage foliage, int p_230372_6_, int radius, Set<BlockPos> foliagePositions, int p_230372_9_, MutableBoundingBox box){
         BlockPos node = foliage.func_236763_a_();
         // Iterate in a spheroid to place leaves
-        for(int x1 = -3; x1 <= 3; x1++){
-            for(int z1 = -3; z1 <= 3; z1++){
-                for(int y1 = -2; y1 <= 2; y1++){
-                    double rX = x1 / 2.8;
-                    double rZ = z1 / 2.8;
+        for(int x1 = -5; x1 <= 5; x1++){
+            for(int z1 = -5; z1 <= 5; z1++){
+                for(int y1 = -4; y1 <= 4; y1++){
+                    double rX = x1 / 3.1;
+                    double rZ = z1 / 3.1;
                     double rY = y1 / 1.8;
                     // Scale the distance to customize the blob shape
                     rX *= 1;
